@@ -1,0 +1,79 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ISA.Showroom.Finance.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Courier New, 8.25pt</Value>
+    </Setting>
+    <Setting Name="KodeTransPiutangKaryawan" Type="System.Guid" Scope="User">
+      <Value Profile="(Default)">b075dff7-bd42-43ed-9f86-31d404555cb9</Value>
+    </Setting>
+    <Setting Name="ISOtomotifDbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=131.68.7.235;Initial Catalog=ISOtomotifDb;Persist Security Info=True;User ID=sa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=131.68.7.235;Initial Catalog=ISOtomotifDb;Persist Security Info=True;User ID=sa</Value>
+    </Setting>
+    <Setting Name="DBFinanceOto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISAFinanceOtoDb</Value>
+    </Setting>
+    <Setting Name="DBShowroom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISAShowroomDb</Value>
+    </Setting>
+    <Setting Name="DBFUpload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Upload</Value>
+    </Setting>
+    <Setting Name="DBFDownload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Download</Value>
+    </Setting>
+    <Setting Name="OutputFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="EmailSenderISA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">isa.admin@sas-autoparts.com</Value>
+    </Setting>
+    <Setting Name="PortSendingEmail" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">26</Value>
+    </Setting>
+    <Setting Name="EmailHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mail.sas-autoparts.com</Value>
+    </Setting>
+    <Setting Name="EmailKasir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dwiwantara@gmail.com</Value>
+    </Setting>
+    <Setting Name="NewDNKN" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EmailSenderPwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sas11palur</Value>
+    </Setting>
+    <Setting Name="PerusahaanRowID" Type="System.Guid" Scope="User">
+      <Value Profile="(Default)">f0bfec6b-e92c-44a3-9eeb-f41960503f15</Value>
+    </Setting>
+    <Setting Name="Smtp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="smtpPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="smtpLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tss.palur.sas@gmail.com</Value>
+    </Setting>
+    <Setting Name="smtpPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tss.palur</Value>
+    </Setting>
+    <Setting Name="ISAFinanceOtoDbTLAConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=.;Initial Catalog=ISAFinanceOtoDbTLA;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=.;Initial Catalog=ISAFinanceOtoDbTLA;Integrated Security=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

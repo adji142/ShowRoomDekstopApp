@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGiro" targetNamespace="http://tempuri.org/dsGiro.xsd" xmlns:mstns="http://tempuri.org/dsGiro.xsd" xmlns="http://tempuri.org/dsGiro.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGiro" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsGiro" msprop:Generator_DataSetName="dsGiro" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GiroMasukan" msprop:Generator_UserTableName="GiroMasukan" msprop:Generator_RowDeletedName="GiroMasukanRowDeleted" msprop:Generator_RowChangedName="GiroMasukanRowChanged" msprop:Generator_RowClassName="GiroMasukanRow" msprop:Generator_RowChangingName="GiroMasukanRowChanging" msprop:Generator_RowEvArgName="GiroMasukanRowChangeEvent" msprop:Generator_RowEvHandlerName="GiroMasukanRowChangeEventHandler" msprop:Generator_TableClassName="GiroMasukanDataTable" msprop:Generator_TableVarName="tableGiroMasukan" msprop:Generator_RowDeletingName="GiroMasukanRowDeleting" msprop:Generator_TablePropName="GiroMasukan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TglTransaksi" msprop:Generator_UserColumnName="TglTransaksi" msprop:Generator_ColumnVarNameInTable="columnTglTransaksi" msprop:Generator_ColumnPropNameInRow="TglTransaksi" msprop:Generator_ColumnPropNameInTable="TglTransaksiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cabang" msprop:Generator_UserColumnName="Cabang" msprop:Generator_ColumnVarNameInTable="columnCabang" msprop:Generator_ColumnPropNameInRow="Cabang" msprop:Generator_ColumnPropNameInTable="CabangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nominal" msprop:Generator_UserColumnName="Nominal" msprop:Generator_ColumnVarNameInTable="columnNominal" msprop:Generator_ColumnPropNameInRow="Nominal" msprop:Generator_ColumnPropNameInTable="NominalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DariBank" msprop:Generator_UserColumnName="DariBank" msprop:Generator_ColumnVarNameInTable="columnDariBank" msprop:Generator_ColumnPropNameInRow="DariBank" msprop:Generator_ColumnPropNameInTable="DariBankColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DueDateGiro" msprop:Generator_UserColumnName="DueDateGiro" msprop:Generator_ColumnVarNameInTable="columnDueDateGiro" msprop:Generator_ColumnPropNameInRow="DueDateGiro" msprop:Generator_ColumnPropNameInTable="DueDateGiroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KeBank" msprop:Generator_UserColumnName="KeBank" msprop:Generator_ColumnVarNameInTable="columnKeBank" msprop:Generator_ColumnPropNameInRow="KeBank" msprop:Generator_ColumnPropNameInTable="KeBankColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KeRekening" msprop:Generator_UserColumnName="KeRekening" msprop:Generator_ColumnVarNameInTable="columnKeRekening" msprop:Generator_ColumnPropNameInRow="KeRekening" msprop:Generator_ColumnPropNameInTable="KeRekeningColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StatusGiro" msprop:Generator_UserColumnName="StatusGiro" msprop:Generator_ColumnVarNameInTable="columnStatusGiro" msprop:Generator_ColumnPropNameInRow="StatusGiro" msprop:Generator_ColumnPropNameInTable="StatusGiroColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoCekGiro" msprop:Generator_UserColumnName="NoCekGiro" msprop:Generator_ColumnPropNameInRow="NoCekGiro" msprop:Generator_ColumnVarNameInTable="columnNoCekGiro" msprop:Generator_ColumnPropNameInTable="NoCekGiroColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

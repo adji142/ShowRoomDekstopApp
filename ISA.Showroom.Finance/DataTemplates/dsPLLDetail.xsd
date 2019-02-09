@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLLDetail" targetNamespace="http://tempuri.org/dsPLLDetail.xsd" xmlns:mstns="http://tempuri.org/dsPLLDetail.xsd" xmlns="http://tempuri.org/dsPLLDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLLDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLLDetail" msprop:Generator_DataSetName="dsPLLDetail" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PlldtLain" msprop:Generator_UserTableName="PlldtLain" msprop:Generator_RowDeletedName="PlldtLainRowDeleted" msprop:Generator_RowChangedName="PlldtLainRowChanged" msprop:Generator_RowClassName="PlldtLainRow" msprop:Generator_RowChangingName="PlldtLainRowChanging" msprop:Generator_RowEvArgName="PlldtLainRowChangeEvent" msprop:Generator_RowEvHandlerName="PlldtLainRowChangeEventHandler" msprop:Generator_TableClassName="PlldtLainDataTable" msprop:Generator_TableVarName="tablePlldtLain" msprop:Generator_RowDeletingName="PlldtLainRowDeleting" msprop:Generator_TablePropName="PlldtLain">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tanggal" msprop:Generator_UserColumnName="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Tanggal1" msprop:Generator_UserColumnName="Tanggal1" msprop:Generator_ColumnPropNameInRow="Tanggal1" msprop:Generator_ColumnVarNameInTable="columnTanggal1" msprop:Generator_ColumnPropNameInTable="Tanggal1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="NoBukti1" msprop:Generator_UserColumnName="NoBukti1" msprop:Generator_ColumnPropNameInRow="NoBukti1" msprop:Generator_ColumnVarNameInTable="columnNoBukti1" msprop:Generator_ColumnPropNameInTable="NoBukti1Column" type="xs:string" minOccurs="0" />
+              <xs:element name="InitPerusahaan" msprop:Generator_UserColumnName="InitPerusahaan" msprop:Generator_ColumnPropNameInRow="InitPerusahaan" msprop:Generator_ColumnVarNameInTable="columnInitPerusahaan" msprop:Generator_ColumnPropNameInTable="InitPerusahaanColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SRC" msprop:Generator_UserColumnName="SRC" msprop:Generator_ColumnPropNameInRow="SRC" msprop:Generator_ColumnVarNameInTable="columnSRC" msprop:Generator_ColumnPropNameInTable="SRCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MataUangID" msprop:Generator_UserColumnName="MataUangID" msprop:Generator_ColumnPropNameInRow="MataUangID" msprop:Generator_ColumnVarNameInTable="columnMataUangID" msprop:Generator_ColumnPropNameInTable="MataUangIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NominalUSD" msprop:Generator_UserColumnName="NominalUSD" msprop:Generator_ColumnPropNameInRow="NominalUSD" msprop:Generator_ColumnVarNameInTable="columnNominalUSD" msprop:Generator_ColumnPropNameInTable="NominalUSDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NominalIDR" msprop:Generator_UserColumnName="NominalIDR" msprop:Generator_ColumnPropNameInRow="NominalIDR" msprop:Generator_ColumnVarNameInTable="columnNominalIDR" msprop:Generator_ColumnPropNameInTable="NominalIDRColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

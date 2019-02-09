@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="ISA.Showroom.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />          
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="ISA.Showroom.Properties.Settings.ISAShowroomDbConnectionString"
+            connectionString="Data Source=131.68.7.249,2802;Initial Catalog=ISAShowroomDb;User ID=sa;Password=dotnet10"
+            providerName="System.Data.SqlClient" />
+        <add name="ISA.Showroom.Properties.Settings.ISAShowroomDbTLAConnectionString"
+            connectionString="Data Source=172.16.10.230,1102;Initial Catalog=ISAShowroomDbTLA;User ID=sa"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    <userSettings>
+        <ISA.Showroom.Properties.Settings>
+            <setting name="AppFont" serializeAs="String">
+                <value>Courier New, 8.25pt</value>
+            </setting>
+            <setting name="DBShowroom" serializeAs="String">
+                <value>ISAShowroomDb</value>
+            </setting>
+            <setting name="DBFUpload" serializeAs="String">
+                <value>C:\Temp\Upload</value>
+            </setting>
+            <setting name="DBFDownload" serializeAs="String">
+                <value>C:\Temp\Download</value>
+            </setting>
+            <setting name="OutputFile" serializeAs="String">
+                <value>C:\Temp</value>
+            </setting>
+            <setting name="AppID" serializeAs="String">
+                <value>D11001</value>
+            </setting>
+            <setting name="DBFinanceOto" serializeAs="String">
+                <value>ISOtomotifDb</value>
+            </setting>
+        </ISA.Showroom.Properties.Settings>        
+    </userSettings>
+</configuration>

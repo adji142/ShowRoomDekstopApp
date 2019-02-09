@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\ISA.Encryptyor.exe
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\ISA.Encryptyor.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\ISA.Common.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\ISA.Common.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\bin\Debug\SAS.DAL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ISA.Encryptyor.frmEncryptor.resources
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ISA.Encryptyor.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ISA.Encryptyor.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ISA.Encryptyor.exe
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Encryptyor\obj\Debug\ISA.Encryptyor.pdb

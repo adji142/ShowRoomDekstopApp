@@ -1,0 +1,10 @@
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\ISA.FTP.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\ISA.FTP.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\ISA.Common.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\ISA.Common.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\bin\Debug\SAS.DAL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\obj\Debug\ISA.FTP.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.FTP\obj\Debug\ISA.FTP.pdb

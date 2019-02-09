@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>  <!--Integrated Security=SSPI ðÌðllêÌâôî-->
+
+  <!-- Live Server-->
+  <!--
+  <row id="ISAPalurTradingDb" user="ðÌ" pwd="°ÌðllêÌâôî" datasource="°ªÌâôî²îÌÒÜæØÎ" host="192.168.0.252" default="1"/>
+  <row id="ISPalurDb" user="ðÌ" pwd="°ÌðllêÌâôî" datasource="°ªÌâôîÎ" host="192.168.0.252" default="0"/>
+
+-->
+  <!-- Dev Server -->
+
+  <!--<row id="ISAPalurTradingDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ªÌâôî²îÌÒÜæØÎ" host="192.168.0.250,2802" default="1"/>
+  <row id="ISPalurDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ªÌâôîÎ" host="192.168.0.250,2802" default="0"/>-->
+
+  <!-- UAT Server-->
+
+  <!--<row id="ISAdb" user="ðÌ" pwd="ÒèòæÔòlj" datasource="°ÒÎ" host="131.68.7.252,1102\UAT" default="1"/>
+  <row id="ISAFinance" user="ðÌ" pwd="ÒèòæÔòlj" datasource="°ÜæÌæÐÔ" host="131.68.7.252,1102\UAT" default="0"/>
+  <row id="ISAHR" user="ðÌ" pwd="ÒèòæÔòlj" datasource="°®" host="131.68.7.252,1102\UAT" default="0"/>-->
+	<!--
+	<row id="ISAShowroomDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°°ÚèøîèèäÎ ²°" host="." default="1"/>
+	<row id="ISOtomotifDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔ¨òèÎ ²°" host="." default="0"/>
+-->
+
+	<row id="ISAShowroomDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°°ÚèøîèèäÎ²¢" host="." default="1"/>
+	<row id="ISOtomotifDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔ¨òèÎ²¢" host="." default="0"/>
+
+
+</root>
+<!-- user ðÌ, pwd ISPalurDb ðÌðllêÌâôî-->
+<!-- ISAPalurTradingDb02 - january2021 : ÞÌæôÌîünjln -->

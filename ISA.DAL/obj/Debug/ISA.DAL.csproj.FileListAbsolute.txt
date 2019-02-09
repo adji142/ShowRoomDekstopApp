@@ -1,0 +1,7 @@
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\bin\Debug\host.config.xml
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\bin\Debug\SAS.DAL.dll.config
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\bin\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\bin\Debug\SAS.DAL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\obj\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.DAL\obj\Debug\SAS.DAL.pdb

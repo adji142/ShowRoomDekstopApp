@@ -1,0 +1,21 @@
+﻿sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Perusahaan.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Propinsi.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Kota.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i KelompokBarang.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Stock.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i StockNamaImport.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Toko.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i TokoStatus.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i TokoMasalah.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Toko00.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i SparePart.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HistoryHPPA.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HrgBMKStock.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HrgBMKStock0.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HrgBMKStock2.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HrgBMKKelompokBarang.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i HasilOpname.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i KursHargaJualBarang.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i Sales.sql
+sqlcmd -S SRV11 -U sa -P dotnet -t 0 -i SalesmanRiwayat.sql
+pause

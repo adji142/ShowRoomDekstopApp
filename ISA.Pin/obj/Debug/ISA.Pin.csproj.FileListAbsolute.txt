@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\ISA.PinCabang.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\ISA.PinCabang.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\ISA.Controls.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\ISA.Controls.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\bin\Debug\SAS.DAL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ISA.Pin.frmPin.resources
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ISA.Pin.Properties.Resources.resources
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ISA.Pin.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ISA.PinCabang.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Pin\obj\Debug\ISA.PinCabang.pdb

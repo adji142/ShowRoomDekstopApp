@@ -1,0 +1,2260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06F13FE0-58B5-41C1-95E5-80897E48EBE2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISA.Showroom</RootNamespace>
+    <AssemblyName>ISA.Showroom</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <ApplicationIcon>Motorcycle-icon.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.0.5022.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=3.0.0.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ISA.Batch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ISA.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ISA.Common\bin\Debug\ISA.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ISA.FTP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ISA.FTP\bin\Debug\ISA.FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="ISA.Palur.Trading, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Project\C# Desktop\ISA.Palur.Trading\ISA.Palur.Trading\bin\Debug\ISA.Palur.Trading.exe</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MigraDoc.DocumentObjectModel, Version=1.31.3066.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\miko\Desktop\PDFsharp-MigraDocFoundation-Assemblies-1_31\GDI+\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering, Version=1.31.3066.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\miko\Desktop\PDFsharp-MigraDocFoundation-Assemblies-1_31\GDI+\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering, Version=1.31.3066.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\miko\Desktop\PDFsharp-MigraDocFoundation-Assemblies-1_31\GDI+\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\office.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.31.1789.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\miko\Desktop\PDFsharp-MigraDocFoundation-Assemblies-1_31\GDI+\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.31.1789.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\miko\Desktop\PDFsharp-MigraDocFoundation-Assemblies-1_31\GDI+\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="SAS.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrasi\frmAskPasswordManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmAskPasswordManager.Designer.cs">
+      <DependentUpon>frmAskPasswordManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmErrorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmErrorBrowse.Designer.cs">
+      <DependentUpon>frmErrorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmIdentitasPerusahaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmIdentitasPerusahaan.Designer.cs">
+      <DependentUpon>frmIdentitasPerusahaan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmPengaturanBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmPengaturanBrowse.Designer.cs">
+      <DependentUpon>frmPengaturanBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmPengaturanUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmPengaturanUpdate.Designer.cs">
+      <DependentUpon>frmPengaturanUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityApplicationsBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityApplicationsBrowse.Designer.cs">
+      <DependentUpon>frmSecurityApplicationsBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityApplicationsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityApplicationsUpdate.Designer.cs">
+      <DependentUpon>frmSecurityApplicationsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsBrowse.Designer.cs">
+      <DependentUpon>frmSecurityPartsBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsRolesBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsRolesBrowse.Designer.cs">
+      <DependentUpon>frmSecurityPartsRolesBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityPartsUpdate.Designer.cs">
+      <DependentUpon>frmSecurityPartsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRightsBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRightsBrowse.Designer.cs">
+      <DependentUpon>frmSecurityRightsBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRightsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRightsUpdate.Designer.cs">
+      <DependentUpon>frmSecurityRightsUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesBrowse.Designer.cs">
+      <DependentUpon>frmSecurityRolesBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesUpdate.Designer.cs">
+      <DependentUpon>frmSecurityRolesUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesUsersBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityRolesUsersBrowse.Designer.cs">
+      <DependentUpon>frmSecurityRolesUsersBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersBrowse.Designer.cs">
+      <DependentUpon>frmSecurityUsersBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersRightsBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersRightsBrowse.Designer.cs">
+      <DependentUpon>frmSecurityUsersRightsBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmSecurityUsersUpdate.Designer.cs">
+      <DependentUpon>frmSecurityUsersUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmUserBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmUserBrowse.Designer.cs">
+      <DependentUpon>frmUserBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrasi\frmUserUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrasi\frmUserUpdate.Designer.cs">
+      <DependentUpon>frmUserUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BuildString.cs" />
+    <Compile Include="Class\clsBase.cs" />
+    <Compile Include="Class\clsCostumer.cs" />
+    <Compile Include="Class\clsIdenTitipan.cs" />
+    <Compile Include="Class\clsKolektor.cs" />
+    <Compile Include="Class\clsMotor.cs" />
+    <Compile Include="Class\clsSalesman.cs" />
+    <Compile Include="Class\clsStokMotor.cs" />
+    <Compile Include="Class\clsSurveyor.cs" />
+    <Compile Include="Class\clsVendor.cs" />
+    <Compile Include="Class\Config.cs" />
+    <Compile Include="Class\Error.cs" />
+    <Compile Include="Class\FillComboBox.cs" />
+    <Compile Include="Class\ftpmanagementfile.cs" />
+    <Compile Include="Class\GlobalVar.cs" />
+    <Compile Include="Class\LookupInfo.cs" />
+    <Compile Include="Class\Messages.cs" />
+    <Compile Include="Class\Numerator.cs" />
+    <Compile Include="Class\PenerimaanUang.cs" />
+    <Compile Include="Class\PinId.cs" />
+    <Compile Include="Class\Printer.cs" />
+    <Compile Include="Class\RawPrinter.cs" />
+    <Compile Include="Class\RoundUp.cs" />
+    <Compile Include="Class\SecurityManager.cs" />
+    <Compile Include="Class\Tools.cs" />
+    <Compile Include="Class\Utility.cs" />
+    <Compile Include="Class\Utility.InPopup.cs" />
+    <Compile Include="Class\Zip.cs" />
+    <Compile Include="Controls\frmLookUpCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpCustomer.Designer.cs">
+      <DependentUpon>frmLookUpCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpCustomerALL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpCustomerALL.Designer.cs">
+      <DependentUpon>frmLookUpCustomerALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpJenisMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpJenisMotor.Designer.cs">
+      <DependentUpon>frmLookUpJenisMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpKolektor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpKolektor.designer.cs">
+      <DependentUpon>frmLookUpKolektor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpMotor.Designer.cs">
+      <DependentUpon>frmLookUpMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpRekening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpRekening.Designer.cs">
+      <DependentUpon>frmLookUpRekening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpSalesman.designer.cs">
+      <DependentUpon>frmLookUpSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpStokMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpStokMotor.Designer.cs">
+      <DependentUpon>frmLookUpStokMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpStokMotorTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpStokMotorTLA.Designer.cs">
+      <DependentUpon>frmLookUpStokMotorTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpSurveyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpSurveyor.Designer.cs">
+      <DependentUpon>frmLookUpSurveyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmLookUpVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmLookUpVendor.Designer.cs">
+      <DependentUpon>frmLookUpVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\frmViewImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\frmViewImage.Designer.cs">
+      <DependentUpon>frmViewImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpCustomer.Designer.cs">
+      <DependentUpon>LookUpCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpCustomerALL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpCustomerALL.Designer.cs">
+      <DependentUpon>LookUpCustomerALL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\lookUpJenisMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\lookUpJenisMotor.Designer.cs">
+      <DependentUpon>lookUpJenisMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpKolektor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpKolektor.designer.cs">
+      <DependentUpon>LookUpKolektor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpMotor.Designer.cs">
+      <DependentUpon>LookUpMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpRekening.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpRekening.Designer.cs">
+      <DependentUpon>LookUpRekening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpSalesman.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpSalesman.designer.cs">
+      <DependentUpon>LookUpSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpStokMotor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpStokMotor.Designer.cs">
+      <DependentUpon>LookUpStokMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpStokMotorTLA.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpStokMotorTLA.Designer.cs">
+      <DependentUpon>LookUpStokMotorTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpSurveyor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpSurveyor.Designer.cs">
+      <DependentUpon>LookUpSurveyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LookUpVendor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LookUpVendor.Designer.cs">
+      <DependentUpon>LookUpVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UploadFotoKtp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\UploadFotoKtp.Designer.cs">
+      <DependentUpon>UploadFotoKtp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsIndenPenjualan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIndenPenjualan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsPembelian.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPembelian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsPenjualan.cs">
+      <DependentUpon>dsPenjualan.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTemplates\dsPenjualan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPenjualan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsstocktarikan.cs">
+      <DependentUpon>dsstocktarikan.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataTemplates\dsstocktarikan.Designer.cs">
+      <DependentUpon>dsstocktarikan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplates\dsTrBermasalah.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTrBermasalah.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrint.Designer.cs">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapAPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapAPD.Designer.cs">
+      <DependentUpon>frmLapAPD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapBPKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapBPKB.Designer.cs">
+      <DependentUpon>frmLapBPKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmLapLeasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\FrmLapLeasing.Designer.cs">
+      <DependentUpon>FrmLapLeasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapMasterSTNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapMasterSTNK.Designer.cs">
+      <DependentUpon>frmLapMasterSTNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapMutasiPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapMutasiPiutang.Designer.cs">
+      <DependentUpon>frmLapMutasiPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanIndenPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLaporanIndenPenjualan.Designer.cs">
+      <DependentUpon>frmLaporanIndenPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapPembelian.Designer.cs">
+      <DependentUpon>frmLapPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapPenerimaanPiutang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapPenerimaanPiutang.Designer.cs">
+      <DependentUpon>frmLapPenerimaanPiutang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapOmzetPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapOmzetPenjualan.Designer.cs">
+      <DependentUpon>frmLapOmzetPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapPenjualan.Designer.cs">
+      <DependentUpon>frmLapPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapPiutangOverdue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapPiutangOverdue.Designer.cs">
+      <DependentUpon>frmLapPiutangOverdue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapPiutangSaldo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapPiutangSaldo.Designer.cs">
+      <DependentUpon>frmLapPiutangSaldo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapStock.Designer.cs">
+      <DependentUpon>frmLapStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapStockTarikan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapStockTarikan.Designer.cs">
+      <DependentUpon>frmLapStockTarikan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapSuratJalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapSuratJalan.Designer.cs">
+      <DependentUpon>frmLapSuratJalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapSuratSomasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapSuratSomasi.Designer.cs">
+      <DependentUpon>frmLapSuratSomasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapTagihan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapTagihan.Designer.cs">
+      <DependentUpon>frmLapTagihan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapTargetWilayah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapTargetWilayah.Designer.cs">
+      <DependentUpon>frmLapTargetWilayah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapTLA.Designer.cs">
+      <DependentUpon>frmLapTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmLapTutupBukuHarianTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmLapTutupBukuHarianTLA.Designer.cs">
+      <DependentUpon>frmLapTutupBukuHarianTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\frmTrBermasalah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\frmTrBermasalah.Designer.cs">
+      <DependentUpon>frmTrBermasalah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCostumerBlackList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCostumerBlackList.Designer.cs">
+      <DependentUpon>frmCostumerBlackList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCostumerBlackListUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCostumerBlackListUpdate.Designer.cs">
+      <DependentUpon>frmCostumerBlackListUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCostumerBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCostumerBrowse.Designer.cs">
+      <DependentUpon>frmCostumerBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmCostumerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmCostumerUpdate.Designer.cs">
+      <DependentUpon>frmCostumerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmJenisKendaraan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmJenisKendaraan.Designer.cs">
+      <DependentUpon>frmJenisKendaraan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmKolektorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmKolektorBrowse.Designer.cs">
+      <DependentUpon>frmKolektorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmKolektorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmKolektorUpdate.Designer.cs">
+      <DependentUpon>frmKolektorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmKotaBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmKotaBrowse.Designer.cs">
+      <DependentUpon>frmKotaBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmKotaUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmKotaUpdate.Designer.cs">
+      <DependentUpon>frmKotaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLeasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmLeasing.Designer.cs">
+      <DependentUpon>frmLeasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmLeasingUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmLeasingUpdate.Designer.cs">
+      <DependentUpon>frmLeasingUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMotor.Designer.cs">
+      <DependentUpon>frmMotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmMotorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmMotorUpdate.Designer.cs">
+      <DependentUpon>frmMotorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSalesBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSalesBrowse.Designer.cs">
+      <DependentUpon>frmSalesBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSalesUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSalesUpdate.Designer.cs">
+      <DependentUpon>frmSalesUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStokMotorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStokMotorBrowse.Designer.cs">
+      <DependentUpon>frmStokMotorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmStokMotorBrowseTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmStokMotorBrowseTLA.Designer.cs">
+      <DependentUpon>frmStokMotorBrowseTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSurveyorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSurveyorBrowse.Designer.cs">
+      <DependentUpon>frmSurveyorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmSurveyorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmSurveyorUpdate.Designer.cs">
+      <DependentUpon>frmSurveyorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetKolektorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetKolektorBrowse.Designer.cs">
+      <DependentUpon>frmTargetKolektorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetKolektorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetKolektorUpdate.Designer.cs">
+      <DependentUpon>frmTargetKolektorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetSalesBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetSalesBrowse.Designer.cs">
+      <DependentUpon>frmTargetSalesBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetSalesUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetSalesUpdate.Designer.cs">
+      <DependentUpon>frmTargetSalesUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetSurveyorBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetSurveyorBrowse.Designer.cs">
+      <DependentUpon>frmTargetSurveyorBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmTargetSurveyorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmTargetSurveyorUpdate.Designer.cs">
+      <DependentUpon>frmTargetSurveyorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmVendorBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmVendorBrowser.Designer.cs">
+      <DependentUpon>frmVendorBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmVendorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmVendorUpdate.Designer.cs">
+      <DependentUpon>frmVendorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmViewKTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmViewKTP.Designer.cs">
+      <DependentUpon>frmViewKTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWilayah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWilayah.Designer.cs">
+      <DependentUpon>frmWilayah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWilayahBaru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWilayahBaru.Designer.cs">
+      <DependentUpon>frmWilayahBaru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmWilayahUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmWilayahUpdate.Designer.cs">
+      <DependentUpon>frmWilayahUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmCekListUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmCekListUpdate.Designer.cs">
+      <DependentUpon>frmCekListUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPelunasanPembelianBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPelunasanPembelianBrowse.Designer.cs">
+      <DependentUpon>frmPelunasanPembelianBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPelunasanPembelianUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPelunasanPembelianUpdate.Designer.cs">
+      <DependentUpon>frmPelunasanPembelianUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianBrowse.Designer.cs">
+      <DependentUpon>frmPembelianBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianBrowseTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianBrowseTLA.Designer.cs">
+      <DependentUpon>frmPembelianBrowseTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianUpdate.Designer.cs">
+      <DependentUpon>frmPembelianUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianUpdateTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmPembelianUpdateTLA.Designer.cs">
+      <DependentUpon>frmPembelianUpdateTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmTambahPotonganPembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmTambahPotonganPembelian.Designer.cs">
+      <DependentUpon>frmTambahPotonganPembelian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\frmTglTerimaUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\frmTglTerimaUpdate.Designer.cs">
+      <DependentUpon>frmTglTerimaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pembelian\FrmUbahHarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pembelian\FrmUbahHarga.Designer.cs">
+      <DependentUpon>FrmUbahHarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiBrowse.Designer.cs">
+      <DependentUpon>frmAdministrasiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiIden.Designer.cs">
+      <DependentUpon>frmAdministrasiIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAdministrasiUpdate.Designer.cs">
+      <DependentUpon>frmAdministrasiUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranBrowse.Designer.cs">
+      <DependentUpon>frmAngsuranBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranChange.Designer.cs">
+      <DependentUpon>frmAngsuranChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranIden.Designer.cs">
+      <DependentUpon>frmAngsuranIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranRefinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranRefinance.Designer.cs">
+      <DependentUpon>frmAngsuranRefinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmAngsuranUpdate.Designer.cs">
+      <DependentUpon>frmAngsuranUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmBABPKB_TLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmBABPKB_TLA.Designer.cs">
+      <DependentUpon>frmBABPKB_TLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaBrowse.Designer.cs">
+      <DependentUpon>frmDendaBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaIden.Designer.cs">
+      <DependentUpon>frmDendaIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaKeterangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaKeterangan.Designer.cs">
+      <DependentUpon>frmDendaKeterangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmDendaUpdate.Designer.cs">
+      <DependentUpon>frmDendaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmDPSubsidiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmDPSubsidiBrowse.Designer.cs">
+      <DependentUpon>frmDPSubsidiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmIndenPenjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmIndenPenjualan.Designer.cs">
+      <DependentUpon>frmIndenPenjualan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKomisiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKomisiBrowse.Designer.cs">
+      <DependentUpon>frmKomisiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKonsinyasiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKonsinyasiBrowse.Designer.cs">
+      <DependentUpon>frmKonsinyasiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKonsinyasiUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKonsinyasiUpdate.Designer.cs">
+      <DependentUpon>frmKonsinyasiUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKonversiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKonversiBrowse.Designer.cs">
+      <DependentUpon>frmKonversiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKonversiUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKonversiUpdate.Designer.cs">
+      <DependentUpon>frmKonversiUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmKwitansiKosongBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmKwitansiKosongBrowse.Designer.cs">
+      <DependentUpon>frmKwitansiKosongBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNK.Designer.cs">
+      <DependentUpon>frmMasterSTNK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNKPengambilan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNKPengambilan.Designer.cs">
+      <DependentUpon>frmMasterSTNKPengambilan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNK_AddBPKP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmMasterSTNK_AddBPKP.Designer.cs">
+      <DependentUpon>frmMasterSTNK_AddBPKP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPegadaianBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPegadaianBrowse.Designer.cs">
+      <DependentUpon>frmPegadaianBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPegadaianUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPegadaianUpdate.Designer.cs">
+      <DependentUpon>frmPegadaianUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanBrowse.Designer.cs">
+      <DependentUpon>frmPelunasanBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanTambahUM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanTambahUM.Designer.cs">
+      <DependentUpon>frmPelunasanTambahUM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPelunasanUpdate.Designer.cs">
+      <DependentUpon>frmPelunasanUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenerimaanTitipan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenerimaanTitipan.Designer.cs">
+      <DependentUpon>frmPenerimaanTitipan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBatalJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBatalJual.Designer.cs">
+      <DependentUpon>frmPenjualanBatalJual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowse.Designer.cs">
+      <DependentUpon>frmPenjualanBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseADS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseADS.Designer.cs">
+      <DependentUpon>frmPenjualanBrowseADS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseAttachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseAttachment.Designer.cs">
+      <DependentUpon>frmPenjualanBrowseAttachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanBrowseTLA.Designer.cs">
+      <DependentUpon>frmPenjualanBrowseTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanEditOTR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanEditOTR.Designer.cs">
+      <DependentUpon>frmPenjualanEditOTR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanGantiStok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanGantiStok.Designer.cs">
+      <DependentUpon>frmPenjualanGantiStok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanKoreksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanKoreksi.Designer.cs">
+      <DependentUpon>frmPenjualanKoreksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanPrint.Designer.cs">
+      <DependentUpon>frmPenjualanPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdate.Designer.cs">
+      <DependentUpon>frmPenjualanUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdateADS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdateADS.Designer.cs">
+      <DependentUpon>frmPenjualanUpdateADS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdateTLA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPenjualanUpdateTLA.Designer.cs">
+      <DependentUpon>frmPenjualanUpdateTLA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanBBNBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanBBNBrowse.Designer.cs">
+      <DependentUpon>frmPerubahanBBNBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemBayarBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemBayarBrowse.Designer.cs">
+      <DependentUpon>frmPerubahanSistemBayarBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemKeKredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemKeKredit.Designer.cs">
+      <DependentUpon>frmPerubahanSistemKeKredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemKeLeasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmPerubahanSistemKeLeasing.Designer.cs">
+      <DependentUpon>frmPerubahanSistemKeLeasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmReCalculateAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmReCalculateAngsuran.Designer.cs">
+      <DependentUpon>frmReCalculateAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmRencanaUMBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmRencanaUMBrowse.Designer.cs">
+      <DependentUpon>frmRencanaUMBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmRiwayatGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmRiwayatGiro.Designer.cs">
+      <DependentUpon>frmRiwayatGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanAdjustment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanAdjustment.Designer.cs">
+      <DependentUpon>frmTitipanAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanAdjustmentBrowseAngsuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanAdjustmentBrowseAngsuran.Designer.cs">
+      <DependentUpon>frmTitipanAdjustmentBrowseAngsuran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmTitipanUpdate.Designer.cs">
+      <DependentUpon>frmTitipanUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaBrowse.Designer.cs">
+      <DependentUpon>frmUangMukaBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaIden.Designer.cs">
+      <DependentUpon>frmUangMukaIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUangMukaUpdate.Designer.cs">
+      <DependentUpon>frmUangMukaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaBrowse.Designer.cs">
+      <DependentUpon>frmUMBungaBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaIden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaIden.Designer.cs">
+      <DependentUpon>frmUMBungaIden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaKeterangan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaKeterangan.Designer.cs">
+      <DependentUpon>frmUMBungaKeterangan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMBungaUpdate.Designer.cs">
+      <DependentUpon>frmUMBungaUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMSubsidiBrowse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMSubsidiBrowse.Designer.cs">
+      <DependentUpon>frmUMSubsidiBrowse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Penjualan\frmUMSubsidiUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Penjualan\frmUMSubsidiUpdate.Designer.cs">
+      <DependentUpon>frmUMSubsidiUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pin\frmPin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pin\frmPin.Designer.cs">
+      <DependentUpon>frmPin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrasi\frmAskPasswordManager.resx">
+      <DependentUpon>frmAskPasswordManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmErrorBrowse.resx">
+      <DependentUpon>frmErrorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmIdentitasPerusahaan.resx">
+      <DependentUpon>frmIdentitasPerusahaan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmPengaturanBrowse.resx">
+      <DependentUpon>frmPengaturanBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmPengaturanUpdate.resx">
+      <DependentUpon>frmPengaturanUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityApplicationsBrowse.resx">
+      <DependentUpon>frmSecurityApplicationsBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityApplicationsUpdate.resx">
+      <DependentUpon>frmSecurityApplicationsUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityPartsBrowse.resx">
+      <DependentUpon>frmSecurityPartsBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityPartsRolesBrowse.resx">
+      <DependentUpon>frmSecurityPartsRolesBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityPartsUpdate.resx">
+      <DependentUpon>frmSecurityPartsUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityRightsBrowse.resx">
+      <DependentUpon>frmSecurityRightsBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityRightsUpdate.resx">
+      <DependentUpon>frmSecurityRightsUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityRolesBrowse.resx">
+      <DependentUpon>frmSecurityRolesBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityRolesUpdate.resx">
+      <DependentUpon>frmSecurityRolesUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityRolesUsersBrowse.resx">
+      <DependentUpon>frmSecurityRolesUsersBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityUsersBrowse.resx">
+      <DependentUpon>frmSecurityUsersBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityUsersRightsBrowse.resx">
+      <DependentUpon>frmSecurityUsersRightsBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmSecurityUsersUpdate.resx">
+      <DependentUpon>frmSecurityUsersUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmUserBrowse.resx">
+      <DependentUpon>frmUserBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrasi\frmUserUpdate.resx">
+      <DependentUpon>frmUserUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpCustomer.resx">
+      <DependentUpon>frmLookUpCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpCustomerALL.resx">
+      <DependentUpon>frmLookUpCustomerALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpJenisMotor.resx">
+      <DependentUpon>frmLookUpJenisMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpKolektor.resx">
+      <DependentUpon>frmLookUpKolektor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpMotor.resx">
+      <DependentUpon>frmLookUpMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpRekening.resx">
+      <DependentUpon>frmLookUpRekening.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpSalesman.resx">
+      <DependentUpon>frmLookUpSalesman.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpStokMotor.resx">
+      <DependentUpon>frmLookUpStokMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpStokMotorTLA.resx">
+      <DependentUpon>frmLookUpStokMotorTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpSurveyor.resx">
+      <DependentUpon>frmLookUpSurveyor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmLookUpVendor.resx">
+      <DependentUpon>frmLookUpVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\frmViewImage.resx">
+      <DependentUpon>frmViewImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpCustomer.resx">
+      <DependentUpon>LookUpCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpCustomerALL.resx">
+      <DependentUpon>LookUpCustomerALL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\lookUpJenisMotor.resx">
+      <DependentUpon>lookUpJenisMotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpKolektor.resx">
+      <DependentUpon>LookUpKolektor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpMotor.resx">
+      <DependentUpon>LookUpMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpRekening.resx">
+      <DependentUpon>LookUpRekening.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpSalesman.resx">
+      <DependentUpon>LookUpSalesman.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpStokMotor.resx">
+      <DependentUpon>LookUpStokMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpStokMotorTLA.resx">
+      <DependentUpon>LookUpStokMotorTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpSurveyor.resx">
+      <DependentUpon>LookUpSurveyor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LookUpVendor.resx">
+      <DependentUpon>LookUpVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UploadFotoKtp.resx">
+      <DependentUpon>UploadFotoKtp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrint.resx">
+      <DependentUpon>frmPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\FrmLapLeasing.resx">
+      <DependentUpon>FrmLapLeasing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapMasterSTNK.resx">
+      <DependentUpon>frmLapMasterSTNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLaporanIndenPenjualan.resx">
+      <DependentUpon>frmLaporanIndenPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapPiutangSaldo.resx">
+      <DependentUpon>frmLapPiutangSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapStockTarikan.resx">
+      <DependentUpon>frmLapStockTarikan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapSuratJalan.resx">
+      <DependentUpon>frmLapSuratJalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapSuratSomasi.resx">
+      <DependentUpon>frmLapSuratSomasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmTrBermasalah.resx">
+      <DependentUpon>frmTrBermasalah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmTRBermasalahAdjustment.rdlc" />
+    <EmbeddedResource Include="Laporan\frmTRBermasalahTarikan.rdlc" />
+    <EmbeddedResource Include="Laporan\rptLaporanIndenPenjualan.rdlc" />
+    <EmbeddedResource Include="Laporan\rptPiutangSaldo.rdlc" />
+    <EmbeddedResource Include="Laporan\rptStockTarikan.rdlc" />
+    <EmbeddedResource Include="Laporan\rptSuratJalan.rdlc" />
+    <EmbeddedResource Include="Laporan\rptSuratSomasi1.rdlc" />
+    <EmbeddedResource Include="Laporan\rptSuratSomasi2.rdlc" />
+    <EmbeddedResource Include="Laporan\rptSuratSomasi3.rdlc" />
+    <EmbeddedResource Include="Laporan\RptTagihanTLA_FLT.rdlc" />
+    <EmbeddedResource Include="Laporan\RptTagihanTLACopy1_FLT.rdlc" />
+    <EmbeddedResource Include="Laporan\frmLapAPD.resx">
+      <DependentUpon>frmLapAPD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapBPKB.resx">
+      <DependentUpon>frmLapBPKB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapMutasiPiutang.resx">
+      <DependentUpon>frmLapMutasiPiutang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapPembelian.resx">
+      <DependentUpon>frmLapPembelian.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapPenerimaanPiutang.resx">
+      <DependentUpon>frmLapPenerimaanPiutang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapOmzetPenjualan.resx">
+      <DependentUpon>frmLapOmzetPenjualan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapPenjualan.resx">
+      <DependentUpon>frmLapPenjualan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapPiutangOverdue.resx">
+      <DependentUpon>frmLapPiutangOverdue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapStock.resx">
+      <DependentUpon>frmLapStock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapTagihan.resx">
+      <DependentUpon>frmLapTagihan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapTargetWilayah.resx">
+      <DependentUpon>frmLapTargetWilayah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapTLA.resx">
+      <DependentUpon>frmLapTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\frmLapTutupBukuHarianTLA.resx">
+      <DependentUpon>frmLapTutupBukuHarianTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\RptTagihan.rdlc" />
+    <EmbeddedResource Include="Laporan\RptTagihanCopy1.rdlc" />
+    <EmbeddedResource Include="Laporan\RptTagihanTLA.rdlc" />
+    <EmbeddedResource Include="Laporan\RptTagihanTLACopy1.rdlc" />
+    <EmbeddedResource Include="Laporan\rptTagihanTunai.rdlc" />
+    <EmbeddedResource Include="Laporan\rptTagihanTunaiCopy1.rdlc" />
+    <EmbeddedResource Include="Master\frmCostumerBlackList.resx">
+      <DependentUpon>frmCostumerBlackList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCostumerBlackListUpdate.resx">
+      <DependentUpon>frmCostumerBlackListUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCostumerBrowse.resx">
+      <DependentUpon>frmCostumerBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmCostumerUpdate.resx">
+      <DependentUpon>frmCostumerUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmJenisKendaraan.resx">
+      <DependentUpon>frmJenisKendaraan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmKolektorBrowse.resx">
+      <DependentUpon>frmKolektorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmKolektorUpdate.resx">
+      <DependentUpon>frmKolektorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmKotaBrowse.resx">
+      <DependentUpon>frmKotaBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmKotaUpdate.resx">
+      <DependentUpon>frmKotaUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmLeasing.resx">
+      <DependentUpon>frmLeasing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmLeasingUpdate.resx">
+      <DependentUpon>frmLeasingUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMotor.resx">
+      <DependentUpon>frmMotor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmMotorUpdate.resx">
+      <DependentUpon>frmMotorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSalesBrowse.resx">
+      <DependentUpon>frmSalesBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSalesUpdate.resx">
+      <DependentUpon>frmSalesUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStokMotorBrowse.resx">
+      <DependentUpon>frmStokMotorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmStokMotorBrowseTLA.resx">
+      <DependentUpon>frmStokMotorBrowseTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSurveyorBrowse.resx">
+      <DependentUpon>frmSurveyorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmSurveyorUpdate.resx">
+      <DependentUpon>frmSurveyorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetKolektorBrowse.resx">
+      <DependentUpon>frmTargetKolektorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetKolektorUpdate.resx">
+      <DependentUpon>frmTargetKolektorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetSalesBrowse.resx">
+      <DependentUpon>frmTargetSalesBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetSalesUpdate.resx">
+      <DependentUpon>frmTargetSalesUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetSurveyorBrowse.resx">
+      <DependentUpon>frmTargetSurveyorBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmTargetSurveyorUpdate.resx">
+      <DependentUpon>frmTargetSurveyorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmVendorBrowser.resx">
+      <DependentUpon>frmVendorBrowser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmVendorUpdate.resx">
+      <DependentUpon>frmVendorUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmViewKTP.resx">
+      <DependentUpon>frmViewKTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWilayah.resx">
+      <DependentUpon>frmWilayah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWilayahBaru.resx">
+      <DependentUpon>frmWilayahBaru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmWilayahUpdate.resx">
+      <DependentUpon>frmWilayahUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPembelianBrowseTLA.resx">
+      <DependentUpon>frmPembelianBrowseTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPembelianUpdateTLA.resx">
+      <DependentUpon>frmPembelianUpdateTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmTambahPotonganPembelian.resx">
+      <DependentUpon>frmTambahPotonganPembelian.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmTglTerimaUpdate.resx">
+      <DependentUpon>frmTglTerimaUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\FrmUbahHarga.resx">
+      <DependentUpon>FrmUbahHarga.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\rptKwitansiCopy2.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptKwitansiCopy1.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptBA1.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptBA2.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptFakturCopy2.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptFakturCopy1.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptKwitansi.rdlc" />
+    <EmbeddedResource Include="Pembelian\frmCekListUpdate.resx">
+      <DependentUpon>frmCekListUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPelunasanPembelianBrowse.resx">
+      <DependentUpon>frmPelunasanPembelianBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPelunasanPembelianUpdate.resx">
+      <DependentUpon>frmPelunasanPembelianUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPembelianBrowse.resx">
+      <DependentUpon>frmPembelianBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\frmPembelianUpdate.resx">
+      <DependentUpon>frmPembelianUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pembelian\rptHutangDagang.rdlc" />
+    <EmbeddedResource Include="Pembelian\rptFaktur.rdlc" />
+    <EmbeddedResource Include="Penjualan\frmIndenPenjualan.resx">
+      <DependentUpon>frmIndenPenjualan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmKomisiBrowse.resx">
+      <DependentUpon>frmKomisiBrowse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanKoreksi.resx">
+      <DependentUpon>frmPenjualanKoreksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\rptKwitansiInden.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiIndenCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiIndenCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiTitipan.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiTitipanCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiTitipanCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptMasterSTNK.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptMasterSTNK_printBPKB.rdlc" />
+    <EmbeddedResource Include="Penjualan\frmAdministrasiBrowse.resx">
+      <DependentUpon>frmAdministrasiBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAdministrasiIden.resx">
+      <DependentUpon>frmAdministrasiIden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAdministrasiUpdate.resx">
+      <DependentUpon>frmAdministrasiUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAngsuranBrowse.resx">
+      <DependentUpon>frmAngsuranBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAngsuranChange.resx">
+      <DependentUpon>frmAngsuranChange.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAngsuranIden.resx">
+      <DependentUpon>frmAngsuranIden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAngsuranRefinance.resx">
+      <DependentUpon>frmAngsuranRefinance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmAngsuranUpdate.resx">
+      <DependentUpon>frmAngsuranUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmBABPKB_TLA.resx">
+      <DependentUpon>frmBABPKB_TLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmDendaBrowse.resx">
+      <DependentUpon>frmDendaBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmDendaIden.resx">
+      <DependentUpon>frmDendaIden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmDendaKeterangan.resx">
+      <DependentUpon>frmDendaKeterangan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmDendaUpdate.resx">
+      <DependentUpon>frmDendaUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmDPSubsidiBrowse.resx">
+      <DependentUpon>frmDPSubsidiBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmKonsinyasiBrowse.resx">
+      <DependentUpon>frmKonsinyasiBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmKonsinyasiUpdate.resx">
+      <DependentUpon>frmKonsinyasiUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmKonversiBrowse.resx">
+      <DependentUpon>frmKonversiBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmKonversiUpdate.resx">
+      <DependentUpon>frmKonversiUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmMasterSTNK.resx">
+      <DependentUpon>frmMasterSTNK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmMasterSTNKPengambilan.resx">
+      <DependentUpon>frmMasterSTNKPengambilan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmMasterSTNK_AddBPKP.resx">
+      <DependentUpon>frmMasterSTNK_AddBPKP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPegadaianBrowse.resx">
+      <DependentUpon>frmPegadaianBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPegadaianUpdate.resx">
+      <DependentUpon>frmPegadaianUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPelunasanBrowse.resx">
+      <DependentUpon>frmPelunasanBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPelunasanTambahUM.resx">
+      <DependentUpon>frmPelunasanTambahUM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPelunasanUpdate.resx">
+      <DependentUpon>frmPelunasanUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenerimaanTitipan.resx">
+      <DependentUpon>frmPenerimaanTitipan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanBatalJual.resx">
+      <DependentUpon>frmPenjualanBatalJual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanBrowse.resx">
+      <DependentUpon>frmPenjualanBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanBrowseADS.resx">
+      <DependentUpon>frmPenjualanBrowseADS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanBrowseAttachment.resx">
+      <DependentUpon>frmPenjualanBrowseAttachment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanBrowseTLA.resx">
+      <DependentUpon>frmPenjualanBrowseTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanEditOTR.resx">
+      <DependentUpon>frmPenjualanEditOTR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanGantiStok.resx">
+      <DependentUpon>frmPenjualanGantiStok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanPrint.resx">
+      <DependentUpon>frmPenjualanPrint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanUpdate.resx">
+      <DependentUpon>frmPenjualanUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanUpdateADS.resx">
+      <DependentUpon>frmPenjualanUpdateADS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPenjualanUpdateTLA.resx">
+      <DependentUpon>frmPenjualanUpdateTLA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPerubahanBBNBrowse.resx">
+      <DependentUpon>frmPerubahanBBNBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPerubahanSistemBayarBrowse.resx">
+      <DependentUpon>frmPerubahanSistemBayarBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPerubahanSistemKeKredit.resx">
+      <DependentUpon>frmPerubahanSistemKeKredit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmPerubahanSistemKeLeasing.resx">
+      <DependentUpon>frmPerubahanSistemKeLeasing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmReCalculateAngsuran.resx">
+      <DependentUpon>frmReCalculateAngsuran.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmRencanaUMBrowse.resx">
+      <DependentUpon>frmRencanaUMBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmTitipanAdjustment.resx">
+      <DependentUpon>frmTitipanAdjustment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmTitipanAdjustmentBrowseAngsuran.resx">
+      <DependentUpon>frmTitipanAdjustmentBrowseAngsuran.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmTitipanUpdate.resx">
+      <DependentUpon>frmTitipanUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUangMukaBrowse.resx">
+      <DependentUpon>frmUangMukaBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUangMukaIden.resx">
+      <DependentUpon>frmUangMukaIden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUangMukaUpdate.resx">
+      <DependentUpon>frmUangMukaUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMBungaBrowse.resx">
+      <DependentUpon>frmUMBungaBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMBungaIden.resx">
+      <DependentUpon>frmUMBungaIden.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMBungaKeterangan.resx">
+      <DependentUpon>frmUMBungaKeterangan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMBungaUpdate.resx">
+      <DependentUpon>frmUMBungaUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMSubsidiBrowse.resx">
+      <DependentUpon>frmUMSubsidiBrowse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\frmUMSubsidiUpdate.resx">
+      <DependentUpon>frmUMSubsidiUpdate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Penjualan\rptBABPKB.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptFaktur.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptFakturCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptFakturCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKartuAngsuran.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKartuAngsuran2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKartuPiutang.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansi.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptKwitansiCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptMasterSTNK_printSTNK.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptOder.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptOderCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptOderCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSerahTerima.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSerahTerimaCopy1.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSerahTerimaCopy2.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSerahTerimaCopy3.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSimulasiAngsuran.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSJ.rdlc" />
+    <EmbeddedResource Include="Penjualan\rptSJCopy1.rdlc" />
+    <EmbeddedResource Include="Pin\frmPin.resx">
+      <DependentUpon>frmPin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISA.Controls\ISA.Controls.csproj">
+      <Project>{C7C9CD09-7C62-453D-AB18-DF5EBE0EE25F}</Project>
+      <Name>ISA.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.DAL\ISA.DAL.csproj">
+      <Project>{D32C7E7B-EE9F-4324-A5E5-D5B008A3F589}</Project>
+      <Name>ISA.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ISA.Pin\ISA.Pin.csproj">
+      <Project>{86D4F305-EF40-40A4-A3E2-62ED46BF36CF}</Project>
+      <Name>ISA.Pin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Document\images\Close32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Document\images\Key32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataTemplates\dsIndenPenjualan.xsc">
+      <DependentUpon>dsIndenPenjualan.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsIndenPenjualan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIndenPenjualan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataTemplates\dsIndenPenjualan.xss">
+      <DependentUpon>dsIndenPenjualan.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsstocktarikan.xsc">
+      <DependentUpon>dsstocktarikan.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsstocktarikan.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsstocktarikan1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataTemplates\dsstocktarikan.xss">
+      <DependentUpon>dsstocktarikan.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsTrBermasalah.xsc">
+      <DependentUpon>dsTrBermasalah.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsTrBermasalah.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTrBermasalah.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataTemplates\dsTrBermasalah.xss">
+      <DependentUpon>dsTrBermasalah.xsd</DependentUpon>
+    </None>
+    <None Include="Document\images\Add16.png" />
+    <None Include="Document\images\Add24.png" />
+    <None Include="Document\images\Add32.png" />
+    <None Include="Document\images\Cash16.png" />
+    <None Include="Document\images\Cash24.png" />
+    <None Include="Document\images\Cash32.png" />
+    <None Include="Document\images\Close16.png" />
+    <None Include="Document\images\Close24.png" />
+    <None Include="Document\images\Delete16.png" />
+    <None Include="Document\images\Delete24.png" />
+    <None Include="Document\images\Delete32.png" />
+    <None Include="Document\images\Edit16.png" />
+    <None Include="Document\images\Edit24.png" />
+    <None Include="Document\images\Edit32.png" />
+    <None Include="Document\images\Exit16.png" />
+    <None Include="Document\images\Exit24.png" />
+    <None Include="Document\images\Exit32.png" />
+    <None Include="Document\images\Key16.png" />
+    <None Include="Document\images\Key24.png" />
+    <None Include="Document\images\KeyChain16.png" />
+    <None Include="Document\images\KeyChain24.png" />
+    <None Include="Document\images\KeyChain32.png" />
+    <None Include="Document\images\Link16.png" />
+    <None Include="Document\images\Link24.png" />
+    <None Include="Document\images\Link32.png" />
+    <None Include="Document\images\Lock.bmp" />
+    <None Include="Document\images\LockSmall16.png" />
+    <None Include="Document\images\LockSmall24.png" />
+    <None Include="Document\images\LockSmall32.png" />
+    <None Include="Document\images\Ok16.png" />
+    <None Include="Document\images\Ok24.png" />
+    <None Include="Document\images\Ok32.png" />
+    <None Include="Document\images\Print16.png" />
+    <None Include="Document\images\Print24.png" />
+    <None Include="Document\images\Print32.png" />
+    <None Include="Document\images\Refresh16.png" />
+    <None Include="Document\images\Refresh24.png" />
+    <None Include="Document\images\Refresh32.png" />
+    <None Include="Document\images\SAS_Oto_Logo.bmp" />
+    <None Include="Document\images\Save16.png" />
+    <None Include="Document\images\Save24.png" />
+    <None Include="Document\images\Save32.png" />
+    <None Include="Document\images\Search16.png" />
+    <None Include="Document\images\Search24.png" />
+    <None Include="Document\images\Search32.png" />
+    <None Include="Document\images\Setting16.png" />
+    <None Include="Document\images\Setting24.png" />
+    <None Include="Document\images\Setting32.png" />
+    <None Include="Document\images\Tools16.png" />
+    <None Include="Document\images\Tools24.png" />
+    <None Include="Document\images\Tools32.png" />
+    <Content Include="Document\images\Motorcycle.ico" />
+    <Content Include="images\Add16.png" />
+    <Content Include="images\Add24.png" />
+    <Content Include="images\Add32.png" />
+    <Content Include="images\Cash16.png" />
+    <Content Include="images\Cash24.png" />
+    <Content Include="images\Cash32.png" />
+    <Content Include="images\Close16.png" />
+    <Content Include="images\Close24.png" />
+    <Content Include="images\Close32.png" />
+    <Content Include="images\Delete16.png" />
+    <Content Include="images\Delete24.png" />
+    <Content Include="images\Delete32.png" />
+    <Content Include="images\Edit16.png" />
+    <Content Include="images\Edit24.png" />
+    <Content Include="images\Edit32.png" />
+    <Content Include="images\Exit16.png" />
+    <Content Include="images\Exit24.png" />
+    <Content Include="images\Exit32.png" />
+    <Content Include="images\Key16.png" />
+    <Content Include="images\Key24.png" />
+    <Content Include="images\Key32.png" />
+    <Content Include="images\KeyChain16.png" />
+    <Content Include="images\KeyChain24.png" />
+    <Content Include="images\KeyChain32.png" />
+    <Content Include="images\Link16.png" />
+    <Content Include="images\Link24.png" />
+    <Content Include="images\Link32.png" />
+    <Content Include="images\Lock.bmp" />
+    <Content Include="images\LockSmall16.png" />
+    <Content Include="images\LockSmall24.png" />
+    <Content Include="images\LockSmall32.png" />
+    <Content Include="images\Motorcycle.ico" />
+    <Content Include="images\Ok16.png" />
+    <Content Include="images\Ok24.png" />
+    <Content Include="images\Ok32.png" />
+    <Content Include="images\Print16.png" />
+    <Content Include="images\Print24.png" />
+    <Content Include="images\Print32.png" />
+    <Content Include="images\Refresh16.png" />
+    <Content Include="images\Refresh24.png" />
+    <Content Include="images\Refresh32.png" />
+    <Content Include="images\SAS_Oto_Logo.bmp" />
+    <Content Include="images\Save16.png" />
+    <Content Include="images\Save24.png" />
+    <Content Include="images\Save32.png" />
+    <Content Include="images\Search16.png" />
+    <Content Include="images\Search24.png" />
+    <Content Include="images\Search32.png" />
+    <Content Include="images\Setting16.png" />
+    <Content Include="images\Setting24.png" />
+    <Content Include="images\Setting32.png" />
+    <Content Include="images\Tools16.png" />
+    <Content Include="images\Tools24.png" />
+    <Content Include="images\Tools32.png" />
+    <Content Include="Motorcycle-icon.ico" />
+    <Content Include="Resources\Edit16.png" />
+    <Content Include="Resources\Edit24.png" />
+    <Content Include="Resources\Honda_Motorcycle.png" />
+    <Content Include="Resources\Logo Terang Agung.png" />
+    <None Include="Resources\lock32.bmp" />
+    <None Include="Resources\login_img.png" />
+    <None Include="DataTemplates\dsPembelian.xsc">
+      <DependentUpon>dsPembelian.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsPembelian.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPembelian.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataTemplates\dsPembelian.xss">
+      <DependentUpon>dsPembelian.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsPenjualan.xsc">
+      <DependentUpon>dsPenjualan.xsd</DependentUpon>
+    </None>
+    <None Include="DataTemplates\dsPenjualan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPenjualan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataTemplates\dsPenjualan.xss">
+      <DependentUpon>dsPenjualan.xsd</DependentUpon>
+    </None>
+    <None Include="Document\PENYERAHAN KEMBALI KENDARAAN.dotx" />
+    <None Include="Document\PERJANJIAN SEWA BELI.dotx" />
+    <None Include="Document\RINGKASAN SURAT PERJANJIAN SEWA BELI.dotx" />
+    <None Include="Document\SURAT KUASA.dotx" />
+    <None Include="Document\SURAT PENGAKUAN HUTANG.dotx" />
+    <None Include="Document\SURAT PERNYATAAN.dotx" />
+    <None Include="Resources\payment.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\Printer32.png" />
+    <None Include="Resources\reset.png" />
+    <None Include="Resources\Search32.png" />
+    <None Include="Resources\Search24.png" />
+    <None Include="Resources\Search16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AdobePDFMakerForOffice">
+      <Guid>{EA8D486A-09E6-411F-B452-78F075ACC8CC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AdobePDFMakerX">
+      <Guid>{CBD71DF4-5AED-11D2-BC74-0060979C3633}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

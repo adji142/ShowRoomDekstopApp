@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>  <!--Integrated Security=SSPI ðÌðllêÌâôî-->
+
+<!--  TLA -->
+	<row id="ISAShowroomDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°°ÚèøîèèäÎ²¢" host="." default="1"/>
+	<row id="ISOtomotifDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔ¨òèÎ²¢" host="." default="0"/>
+	
+</root>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPerbandinganSaldo" targetNamespace="http://tempuri.org/dsPerbandinganSaldo.xsd" xmlns:mstns="http://tempuri.org/dsPerbandinganSaldo.xsd" xmlns="http://tempuri.org/dsPerbandinganSaldo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPerbandinganSaldo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPerbandinganSaldo" msprop:Generator_DataSetName="dsPerbandinganSaldo" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_TablePropName="DataTable1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoPerkiraanGL" msprop:Generator_UserColumnName="NoPerkiraanGL" msprop:Generator_ColumnVarNameInTable="columnNoPerkiraanGL" msprop:Generator_ColumnPropNameInRow="NoPerkiraanGL" msprop:Generator_ColumnPropNameInTable="NoPerkiraanGLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaPerkiraanGL" msprop:Generator_UserColumnName="NamaPerkiraanGL" msprop:Generator_ColumnVarNameInTable="columnNamaPerkiraanGL" msprop:Generator_ColumnPropNameInRow="NamaPerkiraanGL" msprop:Generator_ColumnPropNameInTable="NamaPerkiraanGLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoAkhirGL" msprop:Generator_UserColumnName="SaldoAkhirGL" msprop:Generator_ColumnPropNameInRow="SaldoAkhirGL" msprop:Generator_ColumnVarNameInTable="columnSaldoAkhirGL" msprop:Generator_ColumnPropNameInTable="SaldoAkhirGLColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoPerkiraanRek" msprop:Generator_UserColumnName="NoPerkiraanRek" msprop:Generator_ColumnVarNameInTable="columnNoPerkiraanRek" msprop:Generator_ColumnPropNameInRow="NoPerkiraanRek" msprop:Generator_ColumnPropNameInTable="NoPerkiraanRekColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NamaBank" msprop:Generator_UserColumnName="NamaBank" msprop:Generator_ColumnPropNameInRow="NamaBank" msprop:Generator_ColumnVarNameInTable="columnNamaBank" msprop:Generator_ColumnPropNameInTable="NamaBankColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Crosscek" msprop:Generator_UserColumnName="Crosscek" msprop:Generator_ColumnPropNameInRow="Crosscek" msprop:Generator_ColumnVarNameInTable="columnCrosscek" msprop:Generator_ColumnPropNameInTable="CrosscekColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaldoAkhirBank" msprop:Generator_UserColumnName="SaldoAkhirBank" msprop:Generator_ColumnPropNameInRow="SaldoAkhirBank" msprop:Generator_ColumnVarNameInTable="columnSaldoAkhirBank" msprop:Generator_ColumnPropNameInTable="SaldoAkhirBankColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

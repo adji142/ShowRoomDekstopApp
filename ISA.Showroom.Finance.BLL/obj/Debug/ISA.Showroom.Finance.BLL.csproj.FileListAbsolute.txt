@@ -1,0 +1,11 @@
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\host.config.xml
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\ISA.Palur.Finance.BLL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\ISA.Palur.Finance.BLL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\ISA.Common.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\SAS.DAL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\ISA.Common.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\bin\Debug\SAS.DAL.pdb
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\obj\Debug\ISA.Palur.Finance.BLL.dll
+C:\Users\Admin\Documents\Visual Studio 2008\Projects\ISA.Showroom\ISA.Showroom.Finance.BLL\obj\Debug\ISA.Palur.Finance.BLL.pdb

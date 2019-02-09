@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>  <!--Integrated Security=SSPI ðÌðllêÌâôî-->
+
+  <!--  TLA-->
+  <row id="ISAShowroomDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°°ÚèøîèèäÎ²¢" host="172.16.10.240,1103" default="1"/>
+  <row id="ISOtomotifDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔ¨òèÎ²¢" host="172.16.10.240,1103" default="0"/>
+
+  <!--<row id="ISOtomotifDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°ÜæÌæÐÔ¨òèÎ²¢" host="172.16.10.240,1103" default="1"/>
+  <row id="ISAShowroomDb" user="ðÌ" pwd="ÒèòæÔòl" datasource="°°ÚèøîèèäÎ²¢" host="172.16.10.240,1103" default="0"/>-->
+
+</root>

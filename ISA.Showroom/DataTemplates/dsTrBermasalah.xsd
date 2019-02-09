@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTrBermasalah" targetNamespace="http://tempuri.org/dsTrBermasalah.xsd" xmlns:mstns="http://tempuri.org/dsTrBermasalah.xsd" xmlns="http://tempuri.org/dsTrBermasalah.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISAShowroomDbTLAConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISAShowroomDbTLAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Showroom.Properties.Settings.GlobalReference.Default.ISAShowroomDbTLAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTrBermasalah" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsTrBermasalah" msprop:Generator_DataSetName="dsTrBermasalah" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Adjustment" msprop:Generator_UserTableName="Adjustment" msprop:Generator_RowDeletedName="AdjustmentRowDeleted" msprop:Generator_RowChangedName="AdjustmentRowChanged" msprop:Generator_RowClassName="AdjustmentRow" msprop:Generator_RowChangingName="AdjustmentRowChanging" msprop:Generator_RowEvArgName="AdjustmentRowChangeEvent" msprop:Generator_RowEvHandlerName="AdjustmentRowChangeEventHandler" msprop:Generator_TableClassName="AdjustmentDataTable" msprop:Generator_TableVarName="tableAdjustment" msprop:Generator_RowDeletingName="AdjustmentRowDeleting" msprop:Generator_TablePropName="Adjustment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoAR" msprop:Generator_UserColumnName="NoAR" msprop:Generator_ColumnVarNameInTable="columnNoAR" msprop:Generator_ColumnPropNameInRow="NoAR" msprop:Generator_ColumnPropNameInTable="NoARColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoKontrak" msprop:Generator_UserColumnName="NoKontrak" msprop:Generator_ColumnVarNameInTable="columnNoKontrak" msprop:Generator_ColumnPropNameInRow="NoKontrak" msprop:Generator_ColumnPropNameInTable="NoKontrakColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer" msprop:Generator_UserColumnName="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UMNota" msprop:Generator_UserColumnName="UMNota" msprop:Generator_ColumnVarNameInTable="columnUMNota" msprop:Generator_ColumnPropNameInRow="UMNota" msprop:Generator_ColumnPropNameInTable="UMNotaColumn" type="xs:decimal" />
+              <xs:element name="UMBayar" msprop:Generator_UserColumnName="UMBayar" msprop:Generator_ColumnVarNameInTable="columnUMBayar" msprop:Generator_ColumnPropNameInRow="UMBayar" msprop:Generator_ColumnPropNameInTable="UMBayarColumn" type="xs:decimal" />
+              <xs:element name="SisaUangMuka" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SisaUangMuka" msprop:Generator_ColumnVarNameInTable="columnSisaUangMuka" msprop:Generator_ColumnPropNameInRow="SisaUangMuka" msprop:Generator_ColumnPropNameInTable="SisaUangMukaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BiayaADM" msprop:Generator_UserColumnName="BiayaADM" msprop:Generator_ColumnVarNameInTable="columnBiayaADM" msprop:Generator_ColumnPropNameInRow="BiayaADM" msprop:Generator_ColumnPropNameInTable="BiayaADMColumn" type="xs:decimal" />
+              <xs:element name="PokokHutang" msprop:Generator_UserColumnName="PokokHutang" msprop:Generator_ColumnVarNameInTable="columnPokokHutang" msprop:Generator_ColumnPropNameInRow="PokokHutang" msprop:Generator_ColumnPropNameInTable="PokokHutangColumn" type="xs:decimal" />
+              <xs:element name="NominalAngsuran" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NominalAngsuran" msprop:Generator_ColumnVarNameInTable="columnNominalAngsuran" msprop:Generator_ColumnPropNameInRow="NominalAngsuran" msprop:Generator_ColumnPropNameInTable="NominalAngsuranColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SisaPiutang" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SisaPiutang" msprop:Generator_ColumnVarNameInTable="columnSisaPiutang" msprop:Generator_ColumnPropNameInRow="SisaPiutang" msprop:Generator_ColumnPropNameInTable="SisaPiutangColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Adjustment" msprop:Generator_UserColumnName="Adjustment" msprop:Generator_ColumnVarNameInTable="columnAdjustment" msprop:Generator_ColumnPropNameInRow="Adjustment" msprop:Generator_ColumnPropNameInTable="AdjustmentColumn" type="xs:decimal" />
+              <xs:element name="SisaP" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SisaP" msprop:Generator_ColumnVarNameInTable="columnSisaP" msprop:Generator_ColumnPropNameInRow="SisaP" msprop:Generator_ColumnPropNameInTable="SisaPColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tarikan" msprop:Generator_UserTableName="Tarikan" msprop:Generator_RowDeletedName="TarikanRowDeleted" msprop:Generator_RowChangedName="TarikanRowChanged" msprop:Generator_RowClassName="TarikanRow" msprop:Generator_RowChangingName="TarikanRowChanging" msprop:Generator_RowEvArgName="TarikanRowChangeEvent" msprop:Generator_RowEvHandlerName="TarikanRowChangeEventHandler" msprop:Generator_TableClassName="TarikanDataTable" msprop:Generator_TableVarName="tableTarikan" msprop:Generator_RowDeletingName="TarikanRowDeleting" msprop:Generator_TablePropName="Tarikan">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoAR" msprop:Generator_UserColumnName="NoAR" msprop:Generator_ColumnVarNameInTable="columnNoAR" msprop:Generator_ColumnPropNameInRow="NoAR" msprop:Generator_ColumnPropNameInTable="NoARColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoKontrak" msprop:Generator_UserColumnName="NoKontrak" msprop:Generator_ColumnVarNameInTable="columnNoKontrak" msprop:Generator_ColumnPropNameInRow="NoKontrak" msprop:Generator_ColumnPropNameInTable="NoKontrakColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer" msprop:Generator_UserColumnName="Customer" msprop:Generator_ColumnVarNameInTable="columnCustomer" msprop:Generator_ColumnPropNameInRow="Customer" msprop:Generator_ColumnPropNameInTable="CustomerColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UMNota" msprop:Generator_UserColumnName="UMNota" msprop:Generator_ColumnVarNameInTable="columnUMNota" msprop:Generator_ColumnPropNameInRow="UMNota" msprop:Generator_ColumnPropNameInTable="UMNotaColumn" type="xs:decimal" />
+              <xs:element name="UMBayar" msprop:Generator_UserColumnName="UMBayar" msprop:Generator_ColumnVarNameInTable="columnUMBayar" msprop:Generator_ColumnPropNameInRow="UMBayar" msprop:Generator_ColumnPropNameInTable="UMBayarColumn" type="xs:decimal" />
+              <xs:element name="UangMuka" msdata:ReadOnly="true" msprop:Generator_UserColumnName="UangMuka" msprop:Generator_ColumnVarNameInTable="columnUangMuka" msprop:Generator_ColumnPropNameInRow="UangMuka" msprop:Generator_ColumnPropNameInTable="UangMukaColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PokokHutang" msprop:Generator_UserColumnName="PokokHutang" msprop:Generator_ColumnVarNameInTable="columnPokokHutang" msprop:Generator_ColumnPropNameInRow="PokokHutang" msprop:Generator_ColumnPropNameInTable="PokokHutangColumn" type="xs:decimal" />
+              <xs:element name="BiayaTarikan" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BiayaTarikan" msprop:Generator_ColumnVarNameInTable="columnBiayaTarikan" msprop:Generator_ColumnPropNameInRow="BiayaTarikan" msprop:Generator_ColumnPropNameInTable="BiayaTarikanColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EstimasiJual" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EstimasiJual" msprop:Generator_ColumnVarNameInTable="columnEstimasiJual" msprop:Generator_ColumnPropNameInRow="EstimasiJual" msprop:Generator_ColumnPropNameInTable="EstimasiJualColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HargaEstimasiMotor" msdata:ReadOnly="true" msprop:Generator_UserColumnName="HargaEstimasiMotor" msprop:Generator_ColumnVarNameInTable="columnHargaEstimasiMotor" msprop:Generator_ColumnPropNameInRow="HargaEstimasiMotor" msprop:Generator_ColumnPropNameInTable="HargaEstimasiMotorColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HargaRealJual" msdata:ReadOnly="true" msprop:Generator_UserColumnName="HargaRealJual" msprop:Generator_ColumnVarNameInTable="columnHargaRealJual" msprop:Generator_ColumnPropNameInRow="HargaRealJual" msprop:Generator_ColumnPropNameInTable="HargaRealJualColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="EstimasiRugi" msdata:ReadOnly="true" msprop:Generator_UserColumnName="EstimasiRugi" msprop:Generator_ColumnVarNameInTable="columnEstimasiRugi" msprop:Generator_ColumnPropNameInRow="EstimasiRugi" msprop:Generator_ColumnPropNameInTable="EstimasiRugiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RealRugi" msdata:ReadOnly="true" msprop:Generator_UserColumnName="RealRugi" msprop:Generator_ColumnVarNameInTable="columnRealRugi" msprop:Generator_ColumnPropNameInRow="RealRugi" msprop:Generator_ColumnPropNameInTable="RealRugiColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NoACC" msprop:Generator_UserColumnName="NoACC" msprop:Generator_ColumnPropNameInRow="NoACC" msprop:Generator_ColumnVarNameInTable="columnNoACC" msprop:Generator_ColumnPropNameInTable="NoACCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TglACC" msprop:Generator_UserColumnName="TglACC" msprop:Generator_ColumnVarNameInTable="columnTglACC" msprop:Generator_ColumnPropNameInRow="TglACC" msprop:Generator_ColumnPropNameInTable="TglACCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Customer2" msprop:Generator_UserColumnName="Customer2" msprop:Generator_ColumnVarNameInTable="columnCustomer2" msprop:Generator_ColumnPropNameInRow="Customer2" msprop:Generator_ColumnPropNameInTable="Customer2Column" type="xs:string" minOccurs="0" />
+              <xs:element name="NoAR2" msprop:Generator_UserColumnName="NoAR2" msprop:Generator_ColumnVarNameInTable="columnNoAR2" msprop:Generator_ColumnPropNameInRow="NoAR2" msprop:Generator_ColumnPropNameInTable="NoAR2Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

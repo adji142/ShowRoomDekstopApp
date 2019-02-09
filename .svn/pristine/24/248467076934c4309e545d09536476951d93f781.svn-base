@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>ebf4fae4-e1b0-4e67-9947-28a988db68ae</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=131.68.7.249,2802;Initial Catalog=ISAShowroomDb;User ID=sa;Password=dotnet10</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Judul">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Judul</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EDP">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>EDP</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Hari">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Hari</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Tanggal">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Tanggal</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Bulan">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Bulan</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Tahun">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Tahun</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PenanggungJawab">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>PenanggungJawab</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Copy">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Copy</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Pembuat">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Pembuat</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="IMG_Path">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_9</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="IMG_PathBW">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_10</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>false</rd:SnapToGrid>
+  <rd:ReportID>c55c9591-7ac4-4a50-9585-83e18105d949</rd:ReportID>
+  <DataSets>
+    <DataSet Name="dsPembelian_Faktur">
+      <Fields>
+        <Field Name="RowID">
+          <DataField>RowID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NamaPerusahaan">
+          <DataField>NamaPerusahaan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AlamatPerusahaan">
+          <DataField>AlamatPerusahaan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KotaPerusahaan">
+          <DataField>KotaPerusahaan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TelpPerusahaan">
+          <DataField>TelpPerusahaan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoTrans">
+          <DataField>NoTrans</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoFaktur">
+          <DataField>NoFaktur</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pembelian">
+          <DataField>Pembelian</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NamaVendor">
+          <DataField>NamaVendor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AlamatVendor">
+          <DataField>AlamatVendor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KelurahanVendor">
+          <DataField>KelurahanVendor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KotaVendor">
+          <DataField>KotaVendor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoIdentitas">
+          <DataField>NoIdentitas</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Referensi">
+          <DataField>Referensi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nopol">
+          <DataField>Nopol</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TypeRowID">
+          <DataField>TypeRowID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MerkMotor">
+          <DataField>MerkMotor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TypeMotor">
+          <DataField>TypeMotor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tahun">
+          <DataField>Tahun</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Warna">
+          <DataField>Warna</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Kondisi">
+          <DataField>Kondisi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoRangka">
+          <DataField>NoRangka</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoMesin">
+          <DataField>NoMesin</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NoBPKB">
+          <DataField>NoBPKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NamaBPKB">
+          <DataField>NamaBPKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AlamatBPKB">
+          <DataField>AlamatBPKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KotaBPKB">
+          <DataField>KotaBPKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KeteranganBPKB">
+          <DataField>KeteranganBPKB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cetak1">
+          <DataField>Cetak1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TglBeli">
+          <DataField>TglBeli</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TglJT">
+          <DataField>TglJT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TglJual">
+          <DataField>TglJual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MataUangID">
+          <DataField>MataUangID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HargaJadi">
+          <DataField>HargaJadi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BiayaRepr">
+          <DataField>BiayaRepr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BiayaTamb">
+          <DataField>BiayaTamb</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UangMuka">
+          <DataField>UangMuka</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HargaOff">
+          <DataField>HargaOff</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bayar">
+          <DataField>Bayar</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LamaKredit">
+          <DataField>LamaKredit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Kota">
+          <DataField>Kota</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MerkType">
+          <DataField>MerkType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cetak2">
+          <DataField>Cetak2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Kelengkapan">
+          <DataField>Kelengkapan</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsPembelian</rd:DataSetName>
+        <rd:TableName>Faktur</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>8.5in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox22">
+        <Top>10.1875in</Top>
+        <Width>4.94792in</Width>
+        <Style>
+          <FontStyle>Italic</FontStyle>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.22396in</Left>
+        <Height>0.25in</Height>
+        <Value>=Parameters!Pembuat.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox65">
+        <Top>10.1875in</Top>
+        <Width>2.25in</Width>
+        <Style>
+          <FontStyle>Italic</FontStyle>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.23958in</Left>
+        <Height>0.25in</Height>
+        <Value>=Parameters!Copy.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox63">
+        <rd:DefaultName>textbox63</rd:DefaultName>
+        <Top>3.73958in</Top>
+        <Width>2.39083in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.36458in</Left>
+        <Height>0.25in</Height>
+        <Value>="(" + Parameters!PenanggungJawab.Value + ")"</Value>
+      </Textbox>
+      <Textbox Name="textbox61">
+        <Top>1.84374in</Top>
+        <Width>8in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>Acara ini.</Value>
+      </Textbox>
+      <Textbox Name="NamaVendor_1">
+        <rd:DefaultName>NamaVendor_1</rd:DefaultName>
+        <Top>3.71874in</Top>
+        <Width>2.63542in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.375in</Left>
+        <Height>0.25in</Height>
+        <Value>="(" + First(Fields!NamaVendor.Value) + ")"</Value>
+      </Textbox>
+      <Textbox Name="textbox57">
+        <Top>2.59374in</Top>
+        <Width>2.375in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.375in</Left>
+        <Height>0.25in</Height>
+        <Value>PIHAK KEDUA,</Value>
+      </Textbox>
+      <Textbox Name="textbox55">
+        <Top>2.59374in</Top>
+        <Width>2.625in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.375in</Left>
+        <Height>0.25in</Height>
+        <Value>PIHAK PERTAMA,</Value>
+      </Textbox>
+      <Textbox Name="textbox56">
+        <Top>1.59374in</Top>
+        <Width>7.5in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75in</Left>
+        <Height>0.25in</Height>
+        <Value>Demikian Berita Acara ini dibuat pada waktu sebagaimana telah disebutkan pada bagian awal Berita</Value>
+      </Textbox>
+      <Textbox Name="textbox54">
+        <Top>0.34374in</Top>
+        <Width>1.10417in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.69792in</Left>
+        <Height>0.25in</Height>
+        <Value>PASAL 3</Value>
+      </Textbox>
+      <Textbox Name="textbox53">
+        <Top>1.09374in</Top>
+        <Width>8in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>hak PIHAK KEDUA sebagai pembeli untuk menerima barang tersebut dari PIHAK PERTAMA telah dilaksanakan.</Value>
+      </Textbox>
+      <Textbox Name="textbox51">
+        <Top>0.84374in</Top>
+        <Width>8in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>demikian kewajiban PIHAK PERTAMA sebagai penjual untuk menyerahkan barang kepada PIHAK KEDUA dan</Value>
+      </Textbox>
+      <Textbox Name="textbox52">
+        <Top>0.59374in</Top>
+        <Width>7.5in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.75in</Left>
+        <Height>0.25in</Height>
+        <Value>Bahwa, dengan telah dilakukannya serah terima barang berdasarkan Berita Acara ini, maka dengan</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>13in</Height>
+  </Body>
+  <Language>en-US</Language>
+</Report>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsRekonsiliasi" targetNamespace="http://tempuri.org/dsRekonsiliasi.xsd" xmlns:mstns="http://tempuri.org/dsRekonsiliasi.xsd" xmlns="http://tempuri.org/dsRekonsiliasi.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsRekonsiliasi" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsRekonsiliasi" msprop:Generator_DataSetName="dsRekonsiliasi" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="data" msprop:Generator_UserTableName="data" msprop:Generator_RowDeletedName="dataRowDeleted" msprop:Generator_RowChangedName="dataRowChanged" msprop:Generator_RowClassName="dataRow" msprop:Generator_RowChangingName="dataRowChanging" msprop:Generator_RowEvArgName="dataRowChangeEvent" msprop:Generator_RowEvHandlerName="dataRowChangeEventHandler" msprop:Generator_TableClassName="dataDataTable" msprop:Generator_TableVarName="tabledata" msprop:Generator_RowDeletingName="dataRowDeleting" msprop:Generator_TablePropName="data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="klp_kode" msprop:Generator_UserColumnName="klp_kode" msprop:Generator_ColumnVarNameInTable="columnklp_kode" msprop:Generator_ColumnPropNameInRow="klp_kode" msprop:Generator_ColumnPropNameInTable="klp_kodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="klp_nama" msprop:Generator_UserColumnName="klp_nama" msprop:Generator_ColumnVarNameInTable="columnklp_nama" msprop:Generator_ColumnPropNameInRow="klp_nama" msprop:Generator_ColumnPropNameInTable="klp_namaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Tanggal" msprop:Generator_UserColumnName="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Nominal" msprop:Generator_UserColumnName="Nominal" msprop:Generator_ColumnVarNameInTable="columnNominal" msprop:Generator_ColumnPropNameInRow="Nominal" msprop:Generator_ColumnPropNameInTable="NominalColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="data2" msprop:Generator_UserTableName="data2" msprop:Generator_RowDeletedName="data2RowDeleted" msprop:Generator_RowChangedName="data2RowChanged" msprop:Generator_RowClassName="data2Row" msprop:Generator_RowChangingName="data2RowChanging" msprop:Generator_RowEvArgName="data2RowChangeEvent" msprop:Generator_RowEvHandlerName="data2RowChangeEventHandler" msprop:Generator_TableClassName="data2DataTable" msprop:Generator_TableVarName="tabledata2" msprop:Generator_RowDeletingName="data2RowDeleting" msprop:Generator_TablePropName="data2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Selisih" msprop:Generator_UserColumnName="Selisih" msprop:Generator_ColumnPropNameInRow="Selisih" msprop:Generator_ColumnVarNameInTable="columnSelisih" msprop:Generator_ColumnPropNameInTable="SelisihColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransaksiBank" msprop:Generator_UserTableName="TransaksiBank" msprop:Generator_RowDeletedName="TransaksiBankRowDeleted" msprop:Generator_RowChangedName="TransaksiBankRowChanged" msprop:Generator_RowClassName="TransaksiBankRow" msprop:Generator_RowChangingName="TransaksiBankRowChanging" msprop:Generator_RowEvArgName="TransaksiBankRowChangeEvent" msprop:Generator_RowEvHandlerName="TransaksiBankRowChangeEventHandler" msprop:Generator_TableClassName="TransaksiBankDataTable" msprop:Generator_TableVarName="tableTransaksiBank" msprop:Generator_RowDeletingName="TransaksiBankRowDeleting" msprop:Generator_TablePropName="TransaksiBank">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tanggal" msprop:Generator_UserColumnName="Tanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cabang" msprop:Generator_UserColumnName="Cabang" msprop:Generator_ColumnPropNameInRow="Cabang" msprop:Generator_ColumnVarNameInTable="columnCabang" msprop:Generator_ColumnPropNameInTable="CabangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Debet" msprop:Generator_UserColumnName="Debet" msprop:Generator_ColumnPropNameInRow="Debet" msprop:Generator_ColumnVarNameInTable="columnDebet" msprop:Generator_ColumnPropNameInTable="DebetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Kredit" msprop:Generator_UserColumnName="Kredit" msprop:Generator_ColumnPropNameInRow="Kredit" msprop:Generator_ColumnVarNameInTable="columnKredit" msprop:Generator_ColumnPropNameInTable="KreditColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DebetORI" msprop:Generator_UserColumnName="DebetORI" msprop:Generator_ColumnPropNameInRow="DebetORI" msprop:Generator_ColumnVarNameInTable="columnDebetORI" msprop:Generator_ColumnPropNameInTable="DebetORIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KreditORI" msprop:Generator_UserColumnName="KreditORI" msprop:Generator_ColumnPropNameInRow="KreditORI" msprop:Generator_ColumnVarNameInTable="columnKreditORI" msprop:Generator_ColumnPropNameInTable="KreditORIColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransaksiBankPerTglInput" msprop:Generator_UserTableName="TransaksiBankPerTglInput" msprop:Generator_RowDeletedName="TransaksiBankPerTglInputRowDeleted" msprop:Generator_RowChangedName="TransaksiBankPerTglInputRowChanged" msprop:Generator_RowClassName="TransaksiBankPerTglInputRow" msprop:Generator_RowChangingName="TransaksiBankPerTglInputRowChanging" msprop:Generator_RowEvArgName="TransaksiBankPerTglInputRowChangeEvent" msprop:Generator_RowEvHandlerName="TransaksiBankPerTglInputRowChangeEventHandler" msprop:Generator_TableClassName="TransaksiBankPerTglInputDataTable" msprop:Generator_TableVarName="tableTransaksiBankPerTglInput" msprop:Generator_RowDeletingName="TransaksiBankPerTglInputRowDeleting" msprop:Generator_TablePropName="TransaksiBankPerTglInput">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tanggal" msprop:Generator_UserColumnName="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Cabang" msprop:Generator_UserColumnName="Cabang" msprop:Generator_ColumnVarNameInTable="columnCabang" msprop:Generator_ColumnPropNameInRow="Cabang" msprop:Generator_ColumnPropNameInTable="CabangColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Uraian" msprop:Generator_UserColumnName="Uraian" msprop:Generator_ColumnVarNameInTable="columnUraian" msprop:Generator_ColumnPropNameInRow="Uraian" msprop:Generator_ColumnPropNameInTable="UraianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Debet" msprop:Generator_UserColumnName="Debet" msprop:Generator_ColumnVarNameInTable="columnDebet" msprop:Generator_ColumnPropNameInRow="Debet" msprop:Generator_ColumnPropNameInTable="DebetColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Kredit" msprop:Generator_UserColumnName="Kredit" msprop:Generator_ColumnVarNameInTable="columnKredit" msprop:Generator_ColumnPropNameInRow="Kredit" msprop:Generator_ColumnPropNameInTable="KreditColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DebetORI" msprop:Generator_UserColumnName="DebetORI" msprop:Generator_ColumnVarNameInTable="columnDebetORI" msprop:Generator_ColumnPropNameInRow="DebetORI" msprop:Generator_ColumnPropNameInTable="DebetORIColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KreditORI" msprop:Generator_UserColumnName="KreditORI" msprop:Generator_ColumnVarNameInTable="columnKreditORI" msprop:Generator_ColumnPropNameInRow="KreditORI" msprop:Generator_ColumnPropNameInTable="KreditORIColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

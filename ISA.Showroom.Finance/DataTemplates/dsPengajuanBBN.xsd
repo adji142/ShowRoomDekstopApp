@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPengajuanBBN" targetNamespace="http://tempuri.org/dsPengajuanBBN.xsd" xmlns:mstns="http://tempuri.org/dsPengajuanBBN.xsd" xmlns="http://tempuri.org/dsPengajuanBBN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ISAFinanceOtoDbTLAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ISAFinanceOtoDbTLAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ISA.Showroom.Finance.Properties.Settings.GlobalReference.Default.ISAFinanceOtoDbTLAConnectionString" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=172.16.10.230,1102;Initial Catalog=ISAFinanceOtoDbTLA;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="srv-db-cabang\uat.ISAFinanceOtoDbTLA.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPengajuanBBN" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPengajuanBBN" msprop:Generator_DataSetName="dsPengajuanBBN" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Data" msprop:Generator_UserTableName="Data" msprop:Generator_RowDeletedName="DataRowDeleted" msprop:Generator_RowChangedName="DataRowChanged" msprop:Generator_RowClassName="DataRow" msprop:Generator_RowChangingName="DataRowChanging" msprop:Generator_RowEvArgName="DataRowChangeEvent" msprop:Generator_RowEvHandlerName="DataRowChangeEventHandler" msprop:Generator_TableClassName="DataDataTable" msprop:Generator_TableVarName="tableData" msprop:Generator_RowDeletingName="DataRowDeleting" msprop:Generator_TablePropName="Data">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RowID" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_UserColumnName="RowID" msprop:Generator_ColumnVarNameInTable="columnRowID" msprop:Generator_ColumnPropNameInRow="RowID" msprop:Generator_ColumnPropNameInTable="RowIDColumn" type="xs:string" />
+              <xs:element name="TglJual" msprop:Generator_UserColumnName="TglJual" msprop:Generator_ColumnVarNameInTable="columnTglJual" msprop:Generator_ColumnPropNameInRow="TglJual" msprop:Generator_ColumnPropNameInTable="TglJualColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NoBukti" msprop:Generator_UserColumnName="NoBukti" msprop:Generator_ColumnVarNameInTable="columnNoBukti" msprop:Generator_ColumnPropNameInRow="NoBukti" msprop:Generator_ColumnPropNameInTable="NoBuktiColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoTrans" msprop:Generator_UserColumnName="NoTrans" msprop:Generator_ColumnVarNameInTable="columnNoTrans" msprop:Generator_ColumnPropNameInRow="NoTrans" msprop:Generator_ColumnPropNameInTable="NoTransColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Keterangan" msprop:Generator_UserColumnName="Keterangan" msprop:Generator_ColumnVarNameInTable="columnKeterangan" msprop:Generator_ColumnPropNameInRow="Keterangan" msprop:Generator_ColumnPropNameInTable="KeteranganColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KodeTrans" msprop:Generator_UserColumnName="KodeTrans" msprop:Generator_ColumnVarNameInTable="columnKodeTrans" msprop:Generator_ColumnPropNameInRow="KodeTrans" msprop:Generator_ColumnPropNameInTable="KodeTransColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Namacust" msprop:Generator_UserColumnName="Namacust" msprop:Generator_ColumnVarNameInTable="columnNamacust" msprop:Generator_ColumnPropNameInRow="Namacust" msprop:Generator_ColumnPropNameInTable="NamacustColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BBN" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BBN" msprop:Generator_ColumnVarNameInTable="columnBBN" msprop:Generator_ColumnPropNameInRow="BBN" msprop:Generator_ColumnPropNameInTable="BBNColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BayarBBN" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BayarBBN" msprop:Generator_ColumnVarNameInTable="columnBayarBBN" msprop:Generator_ColumnPropNameInRow="BayarBBN" msprop:Generator_ColumnPropNameInTable="BayarBBNColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SisaBBN" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SisaBBN" msprop:Generator_ColumnVarNameInTable="columnSisaBBN" msprop:Generator_ColumnPropNameInRow="SisaBBN" msprop:Generator_ColumnPropNameInTable="SisaBBNColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LaporanPelunasanBBN" msprop:Generator_UserTableName="LaporanPelunasanBBN" msprop:Generator_RowDeletedName="LaporanPelunasanBBNRowDeleted" msprop:Generator_TableClassName="LaporanPelunasanBBNDataTable" msprop:Generator_RowChangedName="LaporanPelunasanBBNRowChanged" msprop:Generator_RowClassName="LaporanPelunasanBBNRow" msprop:Generator_RowChangingName="LaporanPelunasanBBNRowChanging" msprop:Generator_RowEvArgName="LaporanPelunasanBBNRowChangeEvent" msprop:Generator_RowEvHandlerName="LaporanPelunasanBBNRowChangeEventHandler" msprop:Generator_TablePropName="LaporanPelunasanBBN" msprop:Generator_TableVarName="tableLaporanPelunasanBBN" msprop:Generator_RowDeletingName="LaporanPelunasanBBNRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TglJual" msprop:Generator_UserColumnName="TglJual" msprop:Generator_ColumnPropNameInRow="TglJual" msprop:Generator_ColumnVarNameInTable="columnTglJual" msprop:Generator_ColumnPropNameInTable="TglJualColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AR" msprop:Generator_UserColumnName="AR" msprop:Generator_ColumnPropNameInRow="AR" msprop:Generator_ColumnVarNameInTable="columnAR" msprop:Generator_ColumnPropNameInTable="ARColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NoPenjualan" msprop:Generator_UserColumnName="NoPenjualan" msprop:Generator_ColumnPropNameInRow="NoPenjualan" msprop:Generator_ColumnVarNameInTable="columnNoPenjualan" msprop:Generator_ColumnPropNameInTable="NoPenjualanColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NamaKonsumen" msprop:Generator_UserColumnName="NamaKonsumen" msprop:Generator_ColumnPropNameInRow="NamaKonsumen" msprop:Generator_ColumnVarNameInTable="columnNamaKonsumen" msprop:Generator_ColumnPropNameInTable="NamaKonsumenColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kendaraan" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Kendaraan" msprop:Generator_ColumnPropNameInRow="Kendaraan" msprop:Generator_ColumnVarNameInTable="columnKendaraan" msprop:Generator_ColumnPropNameInTable="KendaraanColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="226" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BBNTerima" msprop:Generator_UserColumnName="BBNTerima" msprop:Generator_ColumnPropNameInRow="BBNTerima" msprop:Generator_ColumnVarNameInTable="columnBBNTerima" msprop:Generator_ColumnPropNameInTable="BBNTerimaColumn" type="xs:decimal" />
+              <xs:element name="TglBayarBBN" msprop:Generator_UserColumnName="TglBayarBBN" msprop:Generator_ColumnPropNameInRow="TglBayarBBN" msprop:Generator_ColumnVarNameInTable="columnTglBayarBBN" msprop:Generator_ColumnPropNameInTable="TglBayarBBNColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NominalBayar" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NominalBayar" msprop:Generator_ColumnPropNameInRow="NominalBayar" msprop:Generator_ColumnVarNameInTable="columnNominalBayar" msprop:Generator_ColumnPropNameInTable="NominalBayarColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SelsisihBBN" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SelsisihBBN" msprop:Generator_ColumnPropNameInRow="SelsisihBBN" msprop:Generator_ColumnVarNameInTable="columnSelsisihBBN" msprop:Generator_ColumnPropNameInTable="SelsisihBBNColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SelisihBBNBayar" msdata:ReadOnly="true" msprop:Generator_UserColumnName="SelisihBBNBayar" msprop:Generator_ColumnPropNameInRow="SelisihBBNBayar" msprop:Generator_ColumnVarNameInTable="columnSelisihBBNBayar" msprop:Generator_ColumnPropNameInTable="SelisihBBNBayarColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Data" />
+      <xs:field xpath="mstns:RowID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

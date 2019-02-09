@@ -1,0 +1,43 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ISA.Showroom.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppFont" Type="System.Drawing.Font" Scope="User">
+      <Value Profile="(Default)">Courier New, 8.25pt</Value>
+    </Setting>
+    <Setting Name="DBShowroom" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISAShowroomDb</Value>
+    </Setting>
+    <Setting Name="DBFUpload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Upload</Value>
+    </Setting>
+    <Setting Name="DBFDownload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp\Download</Value>
+    </Setting>
+    <Setting Name="OutputFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="AppID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D11001</Value>
+    </Setting>
+    <Setting Name="ISAShowroomDbConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=131.68.7.249,2802;Initial Catalog=ISAShowroomDb;User ID=sa;Password=dotnet10&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=131.68.7.249,2802;Initial Catalog=ISAShowroomDb;User ID=sa;Password=dotnet10</Value>
+    </Setting>
+    <Setting Name="DBFinanceOto" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ISOtomotifDb</Value>
+    </Setting>
+    <Setting Name="ISAShowroomDbTLAConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=172.16.10.230,1102;Initial Catalog=ISAShowroomDbTLA;User ID=sa&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=172.16.10.230,1102;Initial Catalog=ISAShowroomDbTLA;User ID=sa</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
